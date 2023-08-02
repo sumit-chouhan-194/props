@@ -148,6 +148,12 @@
 .mw_1025 {
   max-width: 1025px;
 }
+.vactor_1{left: 0;
+top: 10%;
+z-index: 0;}
+.vactor_2{right: 0;
+  z-index: 0;
+bottom: 5%;}
 
 .navbar button {
   padding: 12px 24px;

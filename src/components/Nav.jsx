@@ -25,7 +25,7 @@ const Nav = ({ allpages, children, allbtn, nav_bg, aroall }) => {
               className="w-100 pe-4 pe-sm-0 ps-2 ps-sm-0"
             />
           </div>
-          <ul className="d-lg-flex gap-4 mb-0 ps-0 d-none d-lg-inline-block">
+          <ul className="d-xl-flex gap-4 mb-0 ps-0 d-none d-xl-inline-block">
             <li>
             <Link to="/">
                 Home <img src={arrow} alt="arrow" />
@@ -49,12 +49,12 @@ const Nav = ({ allpages, children, allbtn, nav_bg, aroall }) => {
             </li>
             {children}
           </ul>
-          <div className="d-lg-flex align-items-center gap-3 d-none d-lg-inline-block wr">
+          <div className="d-xl-flex align-items-center gap-3 d-none d-xl-inline-block wr">
             <button>Cart</button>
             <button className={`bg-white ${allbtn}`}>All Pages</button>
           </div>
           <div
-            className="d-flex justify-content-between flex-column d-lg-none menu_box z_index_100"
+            className="d-flex justify-content-between flex-column d-xl-none menu_box z_index_100"
             onClick={showNav}
           >
             <h2 className="fs-1 position-relative text-white pe-2">
