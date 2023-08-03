@@ -67,7 +67,11 @@
 .txt_green {
   color: #9ACD32 !important;
 }
-.mw_295{max-width: 295px;}
+
+.mw_295 {
+  max-width: 295px;
+}
+
 /* nav bar */
 .navbar ul li a {
   color: #fff;
@@ -121,7 +125,10 @@
   border-radius: 10px;
   transition: all 300ms linear;
 }
-.box:hover{transform: scale(1.04);}
+
+.box:hover {
+  transform: scale(1.04);
+}
 
 .box_p {
   background: #242424;
@@ -148,12 +155,18 @@
 .mw_1025 {
   max-width: 1025px;
 }
-.vactor_1{left: 0;
-top: 10%;
-z-index: 0;}
-.vactor_2{right: 0;
+
+.vactor_1 {
+  left: 0;
+  top: 10%;
   z-index: 0;
-bottom: 5%;}
+}
+
+.vactor_2 {
+  right: 0;
+  z-index: 0;
+  bottom: 5%;
+}
 
 .navbar button {
   padding: 12px 24px;
@@ -171,4 +184,10 @@ bottom: 5%;}
 
 .navbar button:hover {
   transform: scale(1.08);
+}
+.form_div {
+  width: 450px;
+  background-color: black;
+  padding: 20px;
+  border: 2px solid white;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import victor1 from "../assets/images/vector1.png";
-import victor2 from "../assets/images/vactor2.png";
+import victor1 from "../../assets/images/vector1.png";
+import victor2 from "../../assets/images/vactor2.png";
 const Nutration = ({ mainimg, mainpara, children, data }) => {
   return (
     <>

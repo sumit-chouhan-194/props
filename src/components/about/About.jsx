@@ -1,9 +1,9 @@
 import React from "react";
-import Nav from "../../components/Nav";
-import arrow from "../images/down_arrow.png";
-import Nutration from "../../components/Nutration";
-import { green_s } from "../../components/common/Help";
-import green from "../images/fitfivegreen.png";
+import Nav from "../common/Nav";
+import arrow from "../../assets/images/down_arrow.png";
+import Nutration from "../common/Nutration";
+import { green_s } from "../common/Help";
+import green from "../../assets/images/fitfive_orange.png";
 const About = () => {
   return (
     <>

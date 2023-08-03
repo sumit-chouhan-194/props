@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import arrow from "../assets/images/down_arrow.png";
-import logo from "../assets/images/logo.png";
+import arrow from "../../assets/images/down_arrow.png";
+import logo from "../../assets/images/logo.png";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -27,7 +27,7 @@ const Nav = ({ allpages, children, allbtn, nav_bg, aroall }) => {
           </div>
           <ul className="d-xl-flex gap-4 mb-0 ps-0 d-none d-xl-inline-block">
             <li>
-            <Link to="/">
+              <Link to="/">
                 Home <img src={arrow} alt="arrow" />
               </Link>
             </li>
@@ -37,9 +37,9 @@ const Nav = ({ allpages, children, allbtn, nav_bg, aroall }) => {
               </Link>
             </li>
             <li>
-              <a href="youtube.com">
+            <Link to="/work">
                 Work <img src={arrow} alt="arrow" />
-              </a>
+              </Link>
             </li>
             <li>
               <a href="youtube.com">
