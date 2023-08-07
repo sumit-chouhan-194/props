@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import Nav from "../common/Nav";
 import arrow from "../../assets/images/down_arrow.png"
 const Form = () => {
-  const [inputData, setData] = useState({
+  const [inputData, setInputData] = useState({
     Name: "",
     Age: "",
     Email: "",
@@ -11,12 +11,12 @@ const Form = () => {
   });
   const inputcontrol = (e) => {
     const { name, value } = e.target;
-    setData({ ...inputData, [name]: value });
+    setInputData({ ...inputData, [name]: value });
   };
-  const Submit = (e) => {
+  const FSubmit = (e) => {
     e.preventDefault();
     console.log(inputData);
-    setData({ Name: "", Age: "", Email: "", Passward: "" ,});
+    setInputData({ Name: "", Age: "", Email: "", Passward: "" ,});
   };
   const [show, setShow] = useState(false);
   const toggleField = () => {
@@ -39,24 +39,27 @@ const Form = () => {
           <div className="form_div rounded-3">
             <h2 className="text-white fw-bold">Register today</h2>
             <p className="text-white fw-medium">Fill in the data below.</p>
-            <form className="d-flex flex-column gap-3 w-100" onSubmit={Submit}>
+            <form className="d-flex flex-column gap-3 w-100" onSubmit={FSubmit}>
               <input
                 onChange={inputcontrol}
                 type="Text"
                 placeholder="Name"
                 name="Name"
+                value={inputData.Name}
               />
               <input
                 onChange={inputcontrol}
                 type="Email"
                 placeholder="Email"
                 name="Email"
+                value={inputData.Email}
               />
               <input
                 onChange={inputcontrol}
                 type="number"
                 placeholder="Age"
                 name="Age"
+                value={inputData.Age}
               />
               <div>
                 <span>
@@ -66,6 +69,7 @@ const Form = () => {
                     placeholder="Passward"
                     name="Passward"
                     className="w-75"
+                    value={inputData.Passward}
                   />
                 </span>
                 <button onClick={toggleField} className="bg-white w-25 border-0">
